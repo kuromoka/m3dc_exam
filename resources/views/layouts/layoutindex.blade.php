@@ -4,6 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{{ Config::get('defaultcfg.defaultcfg.PAGE_TITLE') }}</title>
 
 	<!-- Styles -->
 	<link rel="stylesheet" href="{{ asset('/css/style.css') }}">
@@ -22,6 +23,7 @@
          <nav class="navbar navbar-default navbar-fixed-top">
           <div class="container">
             <div class="navbar-header">
+                <h1>{{ Config::get('defaultcfg.defaultcfg.M3DC_LOG_TXT') }}</h1>
             </div>
 
             <div id="patern03" class="collapse navbar-collapse">
