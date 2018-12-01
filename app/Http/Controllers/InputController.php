@@ -18,6 +18,14 @@ class InputController extends Controller
     
     public function displayview(Request $request)
     {
+        // バリデーション
+        $this->validate($request, array(
+            'todohuken' => 'required|max:50',
+            'fname' => 'required|max:50',
+            'lname' => 'required|max:50',
+            'viewcnt' => 'required|numeric',
+        ));
+
         // ログ出力は以下を参考にした
         // http://sagatto.com/20180228_laravel_custom_log
         // http://kzhishu.hatenablog.jp/entry/2015/10/04/200000
