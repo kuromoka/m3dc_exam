@@ -35,8 +35,8 @@
                             	<div class="panel-heading"></div>
                         		<div class="panel-body">
 
-                        			<form id="nameForm" class="form-horizontal" role="form" method="post" action="">
-
+                        			<form id="nameForm" class="form-horizontal" role="form" method="post" action="/displayview">
+										{{ csrf_field() }}
                             			<div class="form-group">
                             				<label class="col-md-2 control-label" >都道府県</label>
                             					<div class="col-md-4">
