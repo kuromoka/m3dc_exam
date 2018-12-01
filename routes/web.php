@@ -11,3 +11,4 @@
 |
 */
 Route::get('/', 'InputController@index');
+Route::get('/displayview', 'InputController@displayview');
